@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
 const userController = require('./api/userController');
 const loanController = require('./api/loanController');
 const transactionController = require('./api/transactionController');
@@ -8,6 +9,7 @@ require('dotenv').config();
 require('./config/db');
 
 app.use(express.json());
+app.use(cors());
 
 app.post('/api/users/register', userController.registerUser);
 app.post('/api/users/login', userController.loginUser);

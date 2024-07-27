@@ -7,7 +7,7 @@
    npm install
    ```
 
-2. Add a `.env` file in the root directory containing the following variables:
+2. Add a `.env` file in the root directory:
    ```
    hhackathon/
    │
@@ -27,7 +27,7 @@
    └── package.json
    ```
 
-- Inside of .env file
+- containing the following variables:
    ```
       MONGO_URI=<MONGODB-URL>
       PORT=4567
